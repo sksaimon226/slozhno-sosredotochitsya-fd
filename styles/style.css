@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 :root {
    --background-image: url("/images/cover-image-dark.png");
-   --background-color:rgb(14, 12, 133);
+   --background-color:#000028;
 }
   
 
@@ -9,12 +9,14 @@
   background-attachment: fixed;
   background-image: var(--background-image);
   background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--background-color);
   background-size: cover;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .header {
-  height: 100vh;
+  block-size: 100vh;
   min-height: 668px;
   display: grid;
   grid-template-rows:1fr min-content 1fr;
@@ -102,7 +104,6 @@ box-shadow: 0 0 4px 2px var(--accent-color);
 
 .title-decor {
   background-color: var(--accent-color);
-  margin: 0;
 }
 
 .header_text {
@@ -111,4 +112,40 @@ box-shadow: 0 0 4px 2px var(--accent-color);
   color:#000028;
   line-height: 130%;
   font-weight: 700;
+}
+
+.content {
+  display: grid;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-block-start: 40px;
+  gap: 50px;
+}
+
+.section-title {
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--accent-color);
+  padding-bottom: 20px;
+}
+
+.section-text {
+  color: var(--dark-theme-text);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 130%;
+}
+
+.title-decor-third-section {
+  margin-bottom: 20px;
+  background-color: var(--accent-color);
+}
+
+.section-item-normal {
+font-weight: 400;
+font-style: normal;
+}
+
+.shadow-text {
+  text-shadow: 1px 1px 0 var(--accent-color);
 }
